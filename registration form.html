@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <fieldset>
+    <p>Please fill out this form with the required information</p>
+    <form>
+        <label for="first-name">Enter Your First Name:</label><br>
+        <input type="text" id="first-name" name="first-name"><br><br>
+
+        <label for="last-name">Enter Your Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name"><br><br>
+
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Create a New Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        </fieldset>
+
+        <p>Account type (required)</p>
+        <input type="radio" id="personal" name="account-type" value="personal">
+        <label for="personal">Personal</label><br>
+        <input type="radio" id="business" name="account-type" value="business">
+        <label for="business">Business</label><br><br>
+
+        <label for="profile-picture">Upload a profile picture:</label><br>
+        <input type="file" id="profile-picture" name="profile-picture"><br><br>
+
+        <label for="age">Input your age (years):</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="referral">How did you hear about us?</label><br>
+        <select id="referral" name="referral">
+            <option value="">(select one)</option>
+            <option value="social-media">Social Media</option>
+            <option value="friends">Friends</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="bio">Provide a bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50">I like coding with my bro</textarea><br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I accept the <a href="https://policies.google.com/terms?hl=en-US">terms and conditions</a></label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
